@@ -1,0 +1,82 @@
+.fighter-description {
+    &__info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 920px;
+        height: 508px;
+        background-color: #f8f8f8;
+        margin-left: 80px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 100%;
+            left: -12px;
+            background-color: #f9df4f;
+            z-index: 3;
+        }
+    }
+    &__items {
+        display: flex;
+        margin-bottom: 31px;
+    }
+    &__item1 {
+        margin-top: 35px;
+        margin-left: 74px;
+    }
+    &__item2 {
+        margin-top: 43px;
+        margin-left: 54px;
+    }
+    &__name {
+        font-size: 36px;
+        line-height: 0.96;
+        color: #191919;
+        margin-bottom: 19px;
+    }
+    &__country {
+        font-size: 17.5px;
+        line-height: 1.97;
+        color: #191919;
+        margin-bottom: 35px;
+    }
+    &__participation {
+        font-size: 24px;
+        font-weight: 600;
+        color: #191919;
+    }
+    &__age,
+    &__category,
+    &__weight,
+    &__height {
+        font-size: 17.5px;
+        color: #191919;
+        text-align: left;
+    }
+    &__editor {
+        justify-content: flex-start;
+    }
+    &__photos {
+        margin-left: 80px;
+        display: flex;
+        img:nth-child(1) {
+            width: 205px;
+            height: 293px;
+            border: 6px double black
+        }
+        img:nth-child(2) {
+            width: 205px;
+            height: 293px;
+            border: 6px double gray
+        }
+    }
+    &__preview {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+            flex: 0 0 50%;
+        }
+    }
+}

@@ -1,11 +1,14 @@
 .fighters {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 960px;
 }
 
 .draw {
+    position: absolute;
+    top: 10%;
+    right: -40%;
     width: 122px;
     height: 51px;
     border-radius: 5px;
@@ -33,6 +36,13 @@
     }
     &__photos {
         margin-left: 78px;
+    }
+    &__buttons {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-left: 75px;
     }
     &__button {
         align-self: center;
@@ -93,9 +103,9 @@
     }
     &__editor {
         align-self: center;
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
         margin-left: 78px;
     }
     &__parametrs {
