@@ -1,0 +1,322 @@
+.fighters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+}
+
+.draw {
+    width: 122px;
+    height: 51px;
+    border-radius: 5px;
+    background-color: #585858;
+    font-size: 17.5px;
+    font-weight: 600;
+    line-height: 1.97;
+    text-align: center;
+    color: #ffffff;
+}
+
+.fighter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #191919;
+    &__inprofile {
+        margin-bottom: 10px;
+    }
+    &__profile {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__photos {
+        margin-left: 78px;
+    }
+    &__button {
+        align-self: center;
+        position: relative;
+        width: 327px;
+        height: 71px;
+        border: none;
+        border-radius: 5px;
+        background-color: #61d641;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.44;
+        text-align: center;
+        color: #ffffff;
+        margin-left: 78px;
+        margin-bottom: 48px;
+    }
+    &__text {
+        align-self: center;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-size: 17.5px;
+        font-weight: bold;
+        line-height: 1.97;
+        text-align: left;
+        color: #187000;
+    }
+    &__name {
+        align-self: center;
+        font-size: 36px;
+        line-height: 0.96;
+        text-align: left;
+        margin-left: 78px;
+        margin-bottom: 19px;
+    }
+    &__country {
+        align-self: center;
+        font-size: 17.5px;
+        line-height: 1.97;
+        text-align: center;
+        margin-left: 78px;
+    }
+    &__age {
+        align-self: center;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        margin-left: 78px;
+    }
+    &__category {
+        align-self: center;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 34px;
+        margin-left: 78px;
+    }
+    &__editor {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 78px;
+    }
+    &__parametrs {
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    &__edit {
+        height: 37px;
+        margin-left: 10px;
+        opacity: 0.4;
+    }
+}
+
+.fights {
+    width: 550px;
+    background-color: #f8f8f8;
+    &__title {
+        margin: 35px 55px 31px 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        height: 10px;
+    }
+    .fights-block {
+        margin-left: 75px;
+        margin-right: 55px;
+        margin-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        .data {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__title {
+            font-size: 13px;
+            font-weight: bold;
+            text-align: left;
+            color: #7c7c7c;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+        }
+        &__fight {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-radius: 2px;
+            margin-bottom: 13px;
+        }
+        &__date {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.46;
+            text-align: left;
+            color: #7c7c7c;
+        }
+        &__rezult {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 2.88;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &__fight_win {
+            background-color: rgba(97, 214, 65, 0.04);
+            .fights-block__rezult {
+                color: #2bc800;
+            }
+            .fights-block__dot {
+                background-color: #2bc800;
+            }
+        }
+        &__fight_lose {
+            background-color: rgba(229, 51, 10, 0.05);
+            .fights-block__rezult {
+                color: #e5330a;
+            }
+            .fights-block__dot {
+                background-color: #e5330a;
+            }
+        }
+        &__description {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 70%;
+        }
+        &__fighters {
+            display: flex;
+            justify-content: space-between;
+            align-self: stretch;
+            font-size: 13.5px;
+            font-weight: bold;
+            text-align: left;
+            color: #191919;
+        }
+        &__end {
+            margin-top: 9px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: center;
+            color: #7c7c7c;
+        }
+        &__dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            align-self: center;
+        }
+    }
+    &__quantaty {
+        display: flex;
+        flex: 0 0 70%;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: #191919;
+        text-transform: uppercase;
+    }
+    &__win {
+        .win {
+            color: #25aa01;
+        }
+    }
+    &__lose {
+        .lose {
+            color: #cc2701;
+        }
+    }
+    &__button {
+        flex: 0 0 30%;
+        order: 3;
+        width: 51px;
+        font-size: 9.5px;
+        font-weight: bold;
+        line-height: 3.63;
+        text-align: center;
+        color: #989898;
+        visibility: hidden;
+        text-transform: uppercase;
+        .arrow {
+            width: 11px;
+            height: 7px;
+            background-color: #a8a8a8;
+        }
+    }
+    &__button_active {
+        visibility: visible;
+        order: 2;
+    }
+    &__button_up {
+        position: relative;
+        .arrow {
+            margin-left: 5px;
+            position: absolute;
+            top: 47%;
+            background-color: #f8f8f8;
+            &:before {
+                content: "";
+                background-color: #a8a8a8;
+                width: 7px;
+                height: 1.5px;
+                display: block;
+                border-radius: 3px;
+                transform: rotate(45deg);
+                transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+                z-index: 1;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #a8a8a8;
+                left: 40%;
+                top: 0%;
+                width: 7px;
+                height: 1.5px;
+                display: block;
+                border-radius: 3px;
+                transform: rotate(-45deg);
+                transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+                z-index: 1;
+            }
+        }
+    }
+    &__button_down {
+        position: relative;
+        .arrow {
+            margin-left: 5px;
+            position: absolute;
+            top: 47%;
+            background-color: #f8f8f8;
+            &:before {
+                content: "";
+                background-color: #a8a8a8;
+                width: 7px;
+                height: 1.5px;
+                display: block;
+                border-radius: 3px;
+                transform: rotate(-45deg);
+                transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+                z-index: 1;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #a8a8a8;
+                left: 30%;
+                top: 0%;
+                width: 7px;
+                height: 1.5px;
+                display: block;
+                border-radius: 3px;
+                transform: rotate(45deg);
+                transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+                z-index: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    width: 1117px;
+    height: 156px;
+    background-color: #f7f7f7;
+    padding: 62px 83px 62px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .copyright {
+        font-size: 12.5px;
+        line-height: 1.64;
+        text-align: left;
+        color: #747474;
+    }
+}

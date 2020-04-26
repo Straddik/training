@@ -1,0 +1,90 @@
+.popup-fighters {
+    display: none;
+    width: 342px;
+    height: 627px;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.13);
+    background-color: #ffffff;
+    padding: 25px 22px 22px 20px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__fighter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        >img {
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    &__rezult {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+    &__fighter_win {
+        position: relative;
+        .popup-fighters__photo1 {
+            &:before {
+                position: absolute;
+                content: '';
+                width: 97%;
+                height: 5px;
+                top: -5px;
+                background-color: #2bc800;
+                z-index: 3;
+            }
+        }
+        .popup-fighters__rezult {
+            color: #2bc800;
+        }
+    }
+    &__fighter_lose {
+        position: relative;
+        .popup-fighters__photo1 {
+            &:before {
+                position: absolute;
+                content: '';
+                width: 97%;
+                height: 5px;
+                top: -5px;
+                background-color: #e5330a;
+                z-index: 3;
+            }
+        }
+        .popup-fighters__rezult {
+            color: #e5330a;
+        }
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #191919;
+        margin-bottom: 9px;
+    }
+    &__country {
+        font-size: 13.5px;
+        color: #191919;
+        margin-bottom: 9px;
+    }
+    &__coefficient-title {
+        font-size: 13.5px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #191919;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    &__coefficient {
+        font-size: 17.5px;
+        font-weight: 600;
+        text-align: center;
+        color: #191919;
+    }
+}
