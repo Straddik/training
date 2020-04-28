@@ -18,6 +18,19 @@
         &:hover {
             background-color: #f8f8f8;
         }
+        &_choozen {
+            background-color: #f8f8f8;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 5px;
+                height: 100%;
+                left: 0;
+                background-color: #f9df4f;
+                z-index: 3;
+            }
+        }
     }
     &__name {
         font-size: 17.5px;

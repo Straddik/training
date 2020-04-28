@@ -90,6 +90,8 @@
         align-self: center;
         font-size: 24px;
         line-height: 1.5;
+    }
+    &__age_margin {
         text-align: center;
         margin-left: 78px;
     }
@@ -97,6 +99,8 @@
         align-self: center;
         font-size: 24px;
         line-height: 1.5;
+    }
+    &__category_margin {
         text-align: center;
         margin-bottom: 34px;
         margin-left: 78px;
@@ -106,23 +110,89 @@
         align-items: center;
         display: flex;
         justify-content: center;
+    }
+    &__editor_margin {
         margin-left: 78px;
     }
     &__parametrs {
         font-size: 24px;
         line-height: 1.5;
         text-align: center;
+        // &_none {
+        //     display: none;
+        // }
     }
     &__edit {
         height: 37px;
+        width: 22px;
         margin-left: 10px;
-        opacity: 0.4;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__weight,
+    &__height {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &_cont {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            width: 87px;
+            font-size: 17.5px;
+            text-align: center;
+            &::placeholder {
+                font-size: 17.5px;
+                text-align: center;
+                opacity: 0.8;
+                color: rgba(0, 0, 0, 0.8);
+            }
+            &:focus {
+                text-align: center;
+                opacity: 1;
+                color: rgba(0, 0, 0, 1);
+                &::placeholder {
+                    opacity: 1;
+                }
+                ~.input-line:before {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+}
+
+.input {
+    width: 87px;
+}
+
+.input-line {
+    position: relative;
+    width: 100%;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        left: 0%;
+        bottom: -5px;
+        opacity: 0.2;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 3;
     }
 }
 
 .fights {
     width: 550px;
-    background-color: #f8f8f8;
+    &_bggrey {
+        background-color: #f8f8f8;
+    }
+    &_margin {
+        margin-left: 75px;
+    }
     &__title {
         margin: 35px 55px 31px 75px;
         display: flex;
