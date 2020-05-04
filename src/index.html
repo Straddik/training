@@ -5,50 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soul scanner</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
 <body>
+
     <header class="header">
         <img class="header__logo" src="../icon/logo/logo.png" alt="Soul Scanner">
-        <nav class="nav">
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-        </nav>
-        <div class="popup popup-types">
-            <div class="popup-types__wrapper">
-                <span class="popup-types__item popup-types__item_choozen">Суперлегкий</span>
-                <span class="popup-types__item ">Легкий</span>
-                <span class="popup-types__item">Средний</span>
-                <span class="popup-types__item">Тяжелый</span>
+        <div class="menu">
+            <input type="checkbox" class="menu__toggle" id="toggle">
+            <label class="menu__btn" for="toggle"> <span></span></label>
+            <nav class="nav">
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+
+            </nav>
+            <div class="popup popup-types">
+                <div class="popup-types__wrapper">
+                    <span class="popup-types__item ">Суперлегкий</span>
+                    <span class="popup-types__item ">Легкий</span>
+                    <span class="popup-types__item">Средний</span>
+                    <span class="popup-types__item">Тяжелый</span>
+                </div>
             </div>
         </div>
     </header>
+
     <section class="fighters">
-        <section class="fighter">
-            <div class="fighter__photos">
-                <img src="../images/rates/fighter1/rateFighter1inprofile.png" alt="fighterinprofile" class="fighter__inprofile">
-                <div class="fighter__profile">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall1.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall2choozen.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall3.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall4.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall5.png" alt="photo" class="fighter__photo">
+        <section class="fighter fighter_margin78">
+            <div class="fighter__photos ">
+                <div class="carausel">
+                    <div class="carausel__inner carausel__inner_1">
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                    </div>
                 </div>
-                <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface">
+
                 <div class="fighter__profile">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall1.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall2choozen.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall3.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall4.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter1/rateFighter1inprofileSmall5.png" alt="photo" class="fighter__photo">
+                    <div class="fighter__profile-inner fighter__profile-inner_1">
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall1.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall2choozen.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall3.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall4.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall5.png" alt="photo" class="fighter__photo"></div>
+                    </div>
+
+                </div>
+                <div class="carausel">
+                    <div class="carausel__inner carausel__inner_2">
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div> <img src="../images/rates/fighter1/rateFighter1fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                    </div>
+                </div>
+                <div class="fighter__profile ">
+                    <div class="fighter__profile-inner fighter__profile-inner_2">
+                        <div> <img src="../images/rates/fighter1/rateFighter1inprofileSmall1.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall2choozen.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall3.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall4.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter1/rateFighter1inprofileSmall5.png" alt="photo" class="fighter__photo"></div>
+                    </div>
+
                 </div>
             </div>
             <div class="fighter__buttons">
@@ -67,8 +100,8 @@
             <div class="fighter__category fighter__category_margin">Весовая категория: полулегкий</div>
             <div class="fighter__editor fighter__editor_center">
                 <div class="fighter__parametrs">
-                    <div class="fighter__weight">Вес: 65 кг </div>
-                    <div class="fighter__height">Рост: 175 см</div>
+                    <div class="fighter__weight fighter__weight_show">Вес: 65 кг </div>
+                    <div class="fighter__height fighter__height_show">Рост: 175 см</div>
                 </div>
                 <div class="fighter__parametrs fighter__parametrs_none">
                     <div class="fighter__weight">Вес:
@@ -85,12 +118,13 @@
                         </div>
                         см</div>
                 </div>
-                <img class="fighter__edit" src="../icon/edit.png" alt="edit">
+                <img class="fighter__edit fighter__edit_open" src="../icon/edit.png" alt="edit">
                 </img>
-                <img class="fighter__edit fighter__edit_none" src="../icon/ready.png" alt="edit">
+                <img class="fighter__edit fighter__edit_close fighter__edit_none" src="../icon/ready.png" alt="edit">
                 </img>
+                <div class="popupError "> Введите правильно вес(от 60 до 150 кг) и рост (от 150 до 220 см)</div>
             </div>
-            <div class="fights fights_bggrey">
+            <div class="fights fights_1 fights_bggrey fights_margin-78px">
                 <div class="fights__title">
                     <div class="fights__quantaty">
                         <div class="fights__allfights">всего боев в 2019:
@@ -108,7 +142,7 @@
                         <span class="arrow"></span>
 
                     </div>
-                    <div class="fights__button fights__button_down ">
+                    <div class="fights__button  fights__button_down ">
                         Скрыть
                         <span class="arrow"></span>
 
@@ -255,14 +289,14 @@
                         <div class="fights-block__dot "></div>
                     </div>
                 </div>
-                <div class="popup popup-fighters">
+                <div class="popup popup-fighters popup-fighters_1">
                     <div class="popup-fighters__wrapper">
                         <div class="popup-fighters__fighter popup-fighters__fighter_win">
                             <div class="popup-fighters__photo1">
-                                <img src="src/images/popup/fighter1_1.png" alt="fighter1">
+                                <img src="images/popup/fighter1_1.png" alt="fighter1">
                             </div>
                             <div class="popup-fighters__photo2">
-                                <img src="src/images/popup/fighter1_2.png" alt="fighter1">
+                                <img src="images/popup/fighter1_2.png" alt="fighter1">
                             </div>
                             <span class="popup-fighters__rezult">win</span>
                             <span class="popup-fighters__name">Алекс Уайт</span>
@@ -274,10 +308,10 @@
                         </div>
                         <div class="popup-fighters__fighter popup-fighters__fighter_lose">
                             <div class="popup-fighters__photo1">
-                                <img src="src/images/popup/fighter2_1.png" alt="fighter2">
+                                <img src="images/popup/fighter2_1.png" alt="fighter2">
                             </div>
                             <div class="popup-fighters__photo2">
-                                <img src="src/images/popup/fighter2_2.png" alt="fighter2">
+                                <img src="images/popup/fighter2_2.png" alt="fighter2">
                             </div>
                             <span class="popup-fighters__rezult ">lose</span>
                             <span class="popup-fighters__name">Джим Миллерт</span>
@@ -292,23 +326,45 @@
             </div>
         </section>
 
-        <section class="fighter">
-            <div class="fighter__photos">
-                <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile">
-                <div class="fighter__profile">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall1.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall2choozen.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall3.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall4.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall5.png" alt="photo" class="fighter__photo">
+        <section class="fighter fighter_margin10">
+            <div class="fighter__photos ">
+                <div class="carausel">
+                    <div class="carausel__inner carausel__inner_3">
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                    </div>
                 </div>
-                <img src="../images/rates/fighter2/rateFighter2fullface.png" alt="fighterfullface" class="fighter__fullface">
+
+                <div class="fighter__profile ">
+                    <div class="fighter__profile-inner fighter__profile-inner_3">
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall1.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall2choozen.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall3.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall4.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall5.png" alt="photo" class="fighter__photo"></div>
+                    </div>
+                </div>
+                <div class="carausel">
+                    <div class="carausel__inner carausel__inner_4">
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2fullface.png" alt="fighterfullface" class="fighter__fullface"></div>
+                        <div> <img src="../images/rates/fighter2/rateFighter2inprofile.png" alt="fighterinprofile" class="fighter__inprofile"></div>
+                    </div>
+                </div>
                 <div class="fighter__profile">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall1.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall2choozen.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall3.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall4.png" alt="photo" class="fighter__photo">
-                    <img src="../images/rates/fighter2/rateFighter2inprofileSmall5.png" alt="photo" class="fighter__photo">
+                    <div class="fighter__profile-inner fighter__profile-inner_4">
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall1.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall2choozen.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall3.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall4.png" alt="photo" class="fighter__photo"></div>
+                        <div><img src="../images/rates/fighter2/rateFighter2inprofileSmall5.png" alt="photo" class="fighter__photo"></div>
+
+                    </div>
                 </div>
             </div>
             <button class="fighter__button">
@@ -323,8 +379,8 @@
             <div class="fighter__category fighter__category_margin">Весовая категория: полулегкий</div>
             <div class="fighter__editor">
                 <div class="fighter__parametrs">
-                    <div class="fighter__weight">Вес: 65 кг </div>
-                    <div class="fighter__height">Рост: 175 см</div>
+                    <div class="fighter__weight fighter__weight_show">Вес: 65 кг </div>
+                    <div class="fighter__height fighter__height_show">Рост: 175 см</div>
                 </div>
                 <div class="fighter__parametrs fighter__parametrs_none">
                     <div class="fighter__weight">Вес:
@@ -341,180 +397,214 @@
                         </div>
                         см</div>
                 </div>
-                <img class="fighter__edit" src="../icon/edit.png" alt="edit">
+                <img class="fighter__edit fighter__edit_open" src="../icon/edit.png" alt="edit">
                 </img>
-                <img class="fighter__edit fighter__edit_none" src="../icon/ready.png" alt="edit">
+                <img class="fighter__edit fighter__edit_close fighter__edit_none" src="../icon/ready.png" alt="edit">
                 </img>
 
             </div>
-            <div class="fights fights_bggrey ">
-                <div class="fights__title ">
-                    <div class="fights__quantaty ">
-                        <div class="fights__allfights ">всего боев в 2019:
-                            <span class="quantaty ">7</span></div>
-                        <div class="fights__win ">
-                            побед:
-                            <span class="win ">3</span>
+            <div class="fights fights_2 fights_bggrey fights_margin-78px">
+                <div class="fights__title">
+                    <div class="fights__quantaty">
+                        <div class="fights__allfights">всего боев в 2019:
+                            <span class="quantaty">7</span></div>
+                        <div class="fights__win">
+                            побед:<span class="win">3</span>
                         </div>
-                        <div class="fights__lose ">
+                        <div class="fights__lose">
                             Поражений:
-                            <span class="lose ">4</span>
+                            <span class="lose">4</span>
                         </div>
                     </div>
-                    <div class="fights__button fights__button_up ">
+                    <div class="fights__button fights__button_up fights__button_active">
                         Показать
-                        <span class="arrow "></span>
+                        <span class="arrow"></span>
 
                     </div>
-                    <div class="fights__button fights__button_down fights__button_active ">
+                    <div class="fights__button  fights__button_down ">
                         Скрыть
-                        <span class="arrow "></span>
+                        <span class="arrow"></span>
 
                     </div>
                 </div>
                 <div class="fights-block ">
-                    <div class="fights-block__title ">Легкий вес — мужчнины: UFC (Мир)</div>
-                    <div class="fights-block__fight fights-block__fight_win ">
-                        <div class="data ">
-                            <div class="fights-block__date ">10.03.2019</div>
+                    <div class="fights-block__title">Легкий вес — мужчнины: UFC (Мир)</div>
+                    <div class="fights-block__fight fights-block__fight_win">
+                        <div class="data">
+                            <div class="fights-block__date">10.03.2019</div>
                             <div class="fights-block__rezult ">win</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Уайт А. (США)</div>
-                                <div class="fights-block__fighter2 ">Moret D. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Уайт А. (США)</div>
+                                <div class="fights-block__fighter2">Moret D. (США)</div>
                             </div>
-                            <div class="fights-block__end ">По очкам — Раунд 3</div>
+                            <div class="fights-block__end">По очкам — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
                 </div>
                 <div class="fights-block ">
-                    <div class="fights-block__title ">Легкий вес — мужчнины: UFC (Мир)</div>
-                    <div class="fights-block__fight fights-block__fight_lose ">
-                        <div class="data ">
-                            <div class="fights-block__date ">09.09.2018</div>
+                    <div class="fights-block__title">Легкий вес — мужчнины: UFC (Мир)</div>
+                    <div class="fights-block__fight fights-block__fight_lose">
+                        <div class="data">
+                            <div class="fights-block__date">09.09.2018</div>
                             <div class="fights-block__rezult ">lose</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Миллер Дж. (США)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Миллер Дж. (США)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Отказ продолжать бой — Раунд 3</div>
+                            <div class="fights-block__end">Отказ продолжать бой — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
-                    <div class="fights-block__fight fights-block__fight_lose ">
-                        <div class="data ">
-                            <div class="fights-block__date ">09.09.2018</div>
+                    <div class="fights-block__fight fights-block__fight_lose">
+                        <div class="data">
+                            <div class="fights-block__date">09.09.2018</div>
                             <div class="fights-block__rezult ">lose</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Krause J. (США)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Krause J. (США)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">По очкам — Раунд 3</div>
+                            <div class="fights-block__end">По очкам — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
                 </div>
                 <div class="fights-block ">
-                    <div class="fights-block__title ">Легкий вес — мужчнины: UFC (Мир)</div>
-                    <div class="fights-block__fight fights-block__fight_win ">
-                        <div class="data ">
-                            <div class="fights-block__date ">10.09.2017</div>
+                    <div class="fights-block__title">Легкий вес — мужчнины: UFC (Мир)</div>
+                    <div class="fights-block__fight fights-block__fight_win">
+                        <div class="data">
+                            <div class="fights-block__date">10.09.2017</div>
                             <div class="fights-block__rezult ">win</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Clarke M. (Кан)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Clarke M. (Кан)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Тенхический нокаут — Раунд 2</div>
+                            <div class="fights-block__end">Тенхический нокаут — Раунд 2</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
-                    <div class="fights-block__fight fights-block__fight_lose ">
-                        <div class="data ">
-                            <div class="fights-block__date ">10.09.2017</div>
+                    <div class="fights-block__fight fights-block__fight_lose">
+                        <div class="data">
+                            <div class="fights-block__date">10.09.2017</div>
                             <div class="fights-block__rezult ">lose</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Мартин Т. (США)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Мартин Т. (США)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Отказ продолжать бой — Раунд 3</div>
+                            <div class="fights-block__end">Отказ продолжать бой — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
                 </div>
                 <div class="fights-block ">
-                    <div class="fights-block__title ">Легкий вес — мужчнины: UFC (Мир)</div>
-                    <div class="fights-block__fight fights-block__fight_win ">
-                        <div class="data ">
-                            <div class="fights-block__date ">10.09.2017</div>
+                    <div class="fights-block__title">Легкий вес — мужчнины: UFC (Мир)</div>
+                    <div class="fights-block__fight fights-block__fight_win">
+                        <div class="data">
+                            <div class="fights-block__date">10.09.2017</div>
                             <div class="fights-block__rezult ">win</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Лобов А. (Рос)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Лобов А. (Рос)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">По очкам — Раунд 3</div>
+                            <div class="fights-block__end">По очкам — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
                 </div>
                 <div class="fights-block ">
-                    <div class="fights-block__title ">полуЛегкий вес — мужчнины: UFC (Мир)</div>
-                    <div class="fights-block__fight fights-block__fight_lose ">
-                        <div class="data ">
-                            <div class="fights-block__date ">07.12.2014</div>
+                    <div class="fights-block__title">полуЛегкий вес — мужчнины: UFC (Мир)</div>
+                    <div class="fights-block__fight fights-block__fight_lose">
+                        <div class="data">
+                            <div class="fights-block__date">07.12.2014</div>
                             <div class="fights-block__rezult ">lose</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Уайт А. (США)</div>
-                                <div class="fights-block__fighter2 ">Collard C. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Уайт А. (США)</div>
+                                <div class="fights-block__fighter2">Collard C. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Тенхический нокаут — Раунд 2</div>
+                            <div class="fights-block__end">Тенхический нокаут — Раунд 2</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
-                    <div class="fights-block__fight fights-block__fight_lose ">
-                        <div class="data ">
-                            <div class="fights-block__date ">07.12.2014</div>
+                    <div class="fights-block__fight fights-block__fight_lose">
+                        <div class="data">
+                            <div class="fights-block__date">07.12.2014</div>
                             <div class="fights-block__rezult ">lose</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Martins L. (Бра)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Martins L. (Бра)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Отказ продолжать бой — Раунд 3</div>
+                            <div class="fights-block__end">Отказ продолжать бой — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
                     </div>
-                    <div class="fights-block__fight fights-block__fight_win ">
-                        <div class="data ">
-                            <div class="fights-block__date ">20.04.2014</div>
+                    <div class="fights-block__fight fights-block__fight_win">
+                        <div class="data">
+                            <div class="fights-block__date">20.04.2014</div>
                             <div class="fights-block__rezult ">win</div>
                         </div>
-                        <div class="fights-block__description ">
-                            <div class="fights-block__fighters ">
-                                <div class="fights-block__fighter1 ">Пайан Э. (США)</div>
-                                <div class="fights-block__fighter2 ">Уайт А. (США)</div>
+                        <div class="fights-block__description">
+                            <div class="fights-block__fighters">
+                                <div class="fights-block__fighter1">Пайан Э. (США)</div>
+                                <div class="fights-block__fighter2">Уайт А. (США)</div>
                             </div>
-                            <div class="fights-block__end ">Отказ продолжать бой — Раунд 3</div>
+                            <div class="fights-block__end">Отказ продолжать бой — Раунд 3</div>
                         </div>
                         <div class="fights-block__dot "></div>
+                    </div>
+                </div>
+                <div class="popup popup-fighters popup-fighters_2">
+                    <div class="popup-fighters__wrapper">
+                        <div class="popup-fighters__fighter popup-fighters__fighter_win">
+                            <div class="popup-fighters__photo1">
+                                <img src="images/popup/fighter2_1.png" alt="fighter2">
+                            </div>
+                            <div class="popup-fighters__photo2">
+                                <img src="images/popup/fighter2_2.png" alt="fighter2">
+                            </div>
+                            <span class="popup-fighters__rezult ">lose</span>
+                            <span class="popup-fighters__name">Джим Миллерт</span>
+                            <div class="popup-fighters__country">
+                                <img src="../icon/flagUsa.png" alt="USA" class="country"> США
+                            </div>
+                            <span class="popup-fighters__coefficient-title">Коэффициент на победу</span>
+                            <span class="popup-fighters__coefficient">~ 5.13</span>
+                        </div>
+                        <div class="popup-fighters__fighter popup-fighters__fighter_lose">
+                            <div class="popup-fighters__photo1">
+                                <img src="images/popup/fighter1_1.png" alt="fighter1">
+                            </div>
+                            <div class="popup-fighters__photo2">
+                                <img src="images/popup/fighter1_2.png" alt="fighter1">
+                            </div>
+                            <span class="popup-fighters__rezult">win</span>
+                            <span class="popup-fighters__name">Алекс Уайт</span>
+                            <div class="popup-fighters__country">
+                                <img src="../icon/flagUsa.png" alt="USA" class="country"> США
+                            </div>
+                            <span class="popup-fighters__coefficient-title">Коэффициент на победу</span>
+                            <span class="popup-fighters__coefficient">~ 1.63</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            </div>
+
         </section>
     </section>
     <section class="table-wrap ">
@@ -530,7 +620,7 @@
             </div>
             </span>
             <span class="table__draw ">Ничья</span>
-            <span class="table__draw ">Победа <br> 
+            <span class="table__lose ">Победа <br> 
                 <span class="table__name ">Джим Миллер</span>
             </span>
         </div>
@@ -594,21 +684,26 @@
         </div>
     </section>
 
-    <footer class="footer ">
-        <a href="# "><img class="logo " src="../icon/logo/logo.png " alt="Soul Scanner "></a>
-        <a href="# "><img src="../icon/money/visa.png " alt="Visa " class="footer__money "></a>
-        <a href="# "><img src="../icon/money/mc.png " alt="MasterCard " class="footer__money "></a>
-        <a href="# " <img src="../icon/money/wm.png " alt="Webmoney " class="footer__money "></a>
-        <a href="# "><img src="../icon/money/qiwi.png " alt="QIWI " class="footer__money "></a>
-        <a href="# "><img src="../icon/money/ym.png " alt="YandexMoney " class="footer__money "></a>
-        <span class="copyright ">
-                ©2018 «Soulscanner.com»<br>
-                Все права защищены
-            </span>
+    <footer class="footer">
+        <div class="logo_footer">
+            <img class="logo" src="../icon/logo/logo.png" alt="Soul Scanner">
+        </div>
+        <div class="footer__moneys">
+            <a href="#"><img src="../icon/money/visa.png" alt="Visa" class="footer__money"></a>
+            <a href=""> <img src="../icon/money/mc.png" alt="MasterCard" class="footer__money"></a>
+            <a href=""><img src="../icon/money/wm.png" alt="Webmoney" class="footer__money"></a>
+            <a href=""><img src="../icon/money/qiwi.png" alt="QIWI" class="footer__money"></a>
+            <a href=""><img src="../icon/money/ym.png" alt="YandexMoney" class="footer__money"></a>
+        </div>
+
+        <div class="copyright">
+            ©2018 «Soulscanner.com»<br> Все права защищены
+        </div>
     </footer>
-
-
-    <script src="src/js/script.js "></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.2.0.min.js"></script>
+    <script type="text/javascript " src="./js/slick.min.js "></script>
+    <script type="text/javascript " src="./main.js "></script>
 </body>
 
 </html>

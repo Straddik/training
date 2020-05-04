@@ -1,17 +1,87 @@
 .header {
-    margin: 28px 0 47px 78px;
-    // margin-top: 28px;
-    // margin-left: 74px;
+    margin: 28px 40px 47px 78px;
     max-width: 718px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &__logo {
+        width: 106px;
+        height: 28px;
         margin-right: 73px;
     }
 }
 
+.menu {
+    position: relative;
+    &__toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        opacity: 0;
+        &:checked~.menu__btn {
+            span {
+                transform: rotate(45deg);
+            }
+            span:before {
+                top: 0px;
+                transform: rotate(0deg);
+            }
+            span:after {
+                top: 0px;
+                transform: rotate(90deg);
+            }
+        }
+        &:checked~.nav {
+            display: flex;
+            padding-top: 60px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            top: 0px;
+            right: 0px;
+            width: 40%;
+            z-index: 5;
+            background-color: rgba(#b6b3b3, 0.7);
+            height: 100%;
+        }
+    }
+    &__btn {
+        display: none;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+        span,
+        span:before,
+        span:after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #616161;
+            transition-duration: .25s;
+            z-index: 10;
+        }
+        span:before {
+            content: '';
+            top: -8px;
+        }
+        span:after {
+            content: '';
+            top: 8px;
+        }
+    }
+}
+
 .nav {
+    position: relative;
     width: 639px;
     height: 13px;
     font-size: 16px;
@@ -22,5 +92,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // &__item {}
+    &__item {
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            bottom: 0%;
+            background-color: #f9df4f;
+        }
+        &_choozen {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 3px;
+                bottom: 0%;
+                background-color: #f9df4f;
+            }
+        }
+    }
 }

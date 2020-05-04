@@ -8,7 +8,7 @@
 .draw {
     position: absolute;
     top: 10%;
-    right: -40%;
+    right: -14%;
     width: 122px;
     height: 51px;
     border-radius: 5px;
@@ -18,13 +18,31 @@
     line-height: 1.97;
     text-align: center;
     color: #ffffff;
+    z-index: 5;
+}
+
+.carausel {
+    width: 100%;
+    margin-bottom: 10px;
+    &__inner {
+        max-width: 460px;
+        max-height: 444px;
+        margin: 0 auto;
+    }
 }
 
 .fighter {
+    width: 470px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: #191919;
+    &_margin78 {
+        margin-left: 78px;
+    }
+    &_margin10 {
+        margin-left: 10px;
+    }
     &__inprofile {
         margin-bottom: 10px;
     }
@@ -34,15 +52,16 @@
         justify-content: space-between;
         align-items: flex-start;
     }
-    &__photos {
-        margin-left: 78px;
+    &__profile-inner {
+        margin: 0 auto;
+        width: 470px;
     }
     &__buttons {
+        width: 100%;
         position: relative;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        margin-left: 75px;
     }
     &__button {
         align-self: center;
@@ -57,7 +76,6 @@
         line-height: 1.44;
         text-align: center;
         color: #ffffff;
-        margin-left: 78px;
         margin-bottom: 48px;
     }
     &__text {
@@ -75,8 +93,7 @@
         align-self: center;
         font-size: 36px;
         line-height: 0.96;
-        text-align: left;
-        margin-left: 78px;
+        text-align: center;
         margin-bottom: 19px;
     }
     &__country {
@@ -84,7 +101,6 @@
         font-size: 17.5px;
         line-height: 1.97;
         text-align: center;
-        margin-left: 78px;
     }
     &__age {
         align-self: center;
@@ -93,7 +109,6 @@
     }
     &__age_margin {
         text-align: center;
-        margin-left: 78px;
     }
     &__category {
         align-self: center;
@@ -103,24 +118,21 @@
     &__category_margin {
         text-align: center;
         margin-bottom: 34px;
-        margin-left: 78px;
     }
     &__editor {
+        position: relative;
         align-self: center;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    &__editor_margin {
-        margin-left: 78px;
-    }
     &__parametrs {
         font-size: 24px;
         line-height: 1.5;
         text-align: center;
-        // &_none {
-        //     display: none;
-        // }
+        &_none {
+            display: none;
+        }
     }
     &__edit {
         height: 37px;
@@ -130,11 +142,13 @@
         &:hover {
             opacity: 1;
         }
+        &_none {
+            display: none;
+        }
     }
     &__weight,
     &__height {
         display: flex;
-        justify-content: center;
         position: relative;
         &_cont {
             background-color: transparent;
@@ -187,6 +201,9 @@
 
 .fights {
     width: 550px;
+    &_margin-78px {
+        margin-left: -78px;
+    }
     &_bggrey {
         background-color: #f8f8f8;
     }
@@ -207,6 +224,8 @@
         margin-bottom: 14px;
         display: flex;
         flex-direction: column;
+        transition: all 1s ease-out;
+        cursor: pointer;
         .data {
             display: flex;
             flex-direction: column;
@@ -221,6 +240,7 @@
             margin-bottom: 9px;
         }
         &__fight {
+            position: relative;
             display: flex;
             padding: 5px;
             justify-content: space-between;
@@ -333,6 +353,7 @@
     }
     &__button_up {
         position: relative;
+        cursor: pointer;
         .arrow {
             margin-left: 5px;
             position: absolute;
@@ -366,6 +387,7 @@
         }
     }
     &__button_down {
+        cursor: pointer;
         position: relative;
         .arrow {
             margin-left: 5px;

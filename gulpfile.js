@@ -4,12 +4,16 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
 gulp.task('server', function() {
     browserSync.init({
         server: {
             baseDir: "src",
-            index: "fighter.html"
+            index: "index.html"
         }
     })
 })
@@ -31,7 +35,14 @@ gulp.task('styles', function() {
 })
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel("styles"))
+    gulp.watch("src/js/**/*.js", gulp.parallel('js'))
     gulp.watch("src/*.html").on("change", browserSync.reload)
 })
+gulp.task('js', () => {
+    return gulp.src('src/js/script.js')
+        .pipe(webpackStream(webpackConfig), webpack)
+        .pipe(gulp.dest('src'))
+        .pipe(browserSync.stream());
+});
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'js'));

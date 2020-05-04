@@ -1,0 +1,317 @@
+    @media (max-width: 992px) {
+        .header {
+            margin-left: 25px;
+            max-width: 650px;
+            &__logo {
+                margin-right: 15px;
+            }
+        }
+        .menu {
+            width: 80%;
+        }
+        .nav {
+            width: 90%;
+        }
+        .fighter-description {
+            width: 100%;
+            &__info {
+                padding-left: 25px;
+                margin-left: 25px;
+                height: 100%;
+            }
+            &__photo {
+                width: 153px;
+                height: 219px;
+            }
+            &__item2 {
+                margin-left: 34px;
+            }
+        }
+        .list-of-fighters {
+            &__item {
+                padding-left: 7px;
+                width: 160px;
+                margin-bottom: 0px;
+                width: 143px;
+            }
+        }
+        .fights {
+            width: 100%;
+            &_margin-78px {
+                margin-left: 0px;
+            }
+            .fights-block,
+            &__title {
+                width: 90%;
+                margin-left: 30px;
+            }
+        }
+        .fighters {
+            width: 100%;
+            flex-direction: column;
+        }
+        .fighter {
+            width: 100%;
+            align-items: center;
+            &_margin78 {
+                margin-left: 0px;
+            }
+            &_margin10 {
+                margin-left: 0px;
+            }
+            &__photos {
+                margin-left: 0px;
+            }
+            &__buttons {
+                flex-direction: column;
+                margin-left: 0px;
+                align-items: center;
+                .draw {
+                    right: 0%;
+                    top: 0%;
+                    position: relative;
+                    margin-bottom: 15px;
+                }
+            }
+            &__button {
+                margin-bottom: 15px;
+            }
+        }
+        .table-wrap {
+            width: 100%;
+            margin-left: 15px;
+        }
+        .footer {
+            width: 100%;
+            height: 116px;
+            padding: 10px 30px 10px 30px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .header {
+            max-width: 100%;
+            margin: 28px 0 27px 20px;
+        }
+        .nav {
+            max-width: 90%;
+            justify-content: flex-start;
+            &__item {
+                margin-left: 15px;
+            }
+        }
+        .main {
+            margin-left: 25px;
+            flex-direction: column;
+        }
+        .list-of-fighters {
+            max-width: 100%;
+            margin-left: 0px;
+            margin-right: 35px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            &__item {
+                flex: 0 0 25%;
+            }
+        }
+        .fighter-description {
+            width: 100%;
+            &__name {
+                font-size: 26px;
+                margin-bottom: 19px;
+            }
+            &__participation {
+                font-size: 18px;
+            }
+            &__info {
+                max-width: 100%;
+            }
+        }
+        .footer {
+            width: 100%;
+            height: 200px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            &__money:nth-child(n) {
+                margin-right: 30px;
+            }
+            &__moneys {
+                flex: 0 0 33%;
+            }
+        }
+        .table-out {
+            width: 90%;
+        }
+        .table {
+            width: 103%
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .menu {
+            &__btn {
+                display: flex;
+            }
+            nav {
+                display: none;
+            }
+        }
+        .list-of-fighters {
+            max-width: 100%;
+            margin-left: 15px;
+            margin-right: 15px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            &__item {
+                flex: 0 0 33%;
+            }
+        }
+        .fighter-description {
+            width: 100%;
+            &__name {
+                font-size: 18px;
+                margin-bottom: 19px;
+                line-height: 1.2;
+            }
+            &__participation {
+                font-size: 14px;
+            }
+            &__info {
+                max-width: 100%;
+            }
+            &__age,
+            &__category,
+            &__height,
+            &__weight {
+                font-size: 15.5px;
+            }
+            &__photos {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .fights {
+            margin-top: 20px;
+            width: 100%;
+            .fights-block {
+                margin-left: 10px;
+            }
+            &__title {
+                height: 40px;
+                margin: 10px;
+            }
+            &__quantaty {
+                margin-right: 5px;
+                flex: 0 0 80%;
+            }
+            &__button {
+                flex: 0 0 20%;
+            }
+            &__allfights,
+            &__win,
+            &__lose {
+                margin-right: 5px;
+                text-align: center;
+            }
+        }
+        .footer {
+            height: 100%;
+            &__moneys {
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                a {
+                    flex: 0 0 50%;
+                    text-align: center;
+                }
+                a:nth-child(3) {
+                    flex: 0 0 100%;
+                }
+            }
+        }
+        .fighter {
+            &__photos {
+                width: 80%;
+                align-items: center;
+                img {
+                    display: block;
+                }
+            }
+            &__inprofile,
+            &__fullface {
+                width: 100%;
+            }
+            &__profile {
+                justify-content: center;
+                margin-bottom: 10px;
+                height: 68px;
+                &-inner {
+                    width: 100%;
+                    height: 100%;
+                }
+                // img {
+                //     margin-left: 5px;
+                //     width: 80%;
+                //     height: 80%;
+                // }
+            }
+            &__buttons {
+                width: 100%;
+                height: 100%;
+            }
+            &__button {
+                width: 70%;
+                height: 40px;
+                font-size: 20px;
+            }
+            &__text {
+                font-size: 10px;
+            }
+            &__name {
+                font-size: 27px;
+            }
+            &__age,
+            &__category,
+            &__weight,
+            &__height {
+                font-size: 17px;
+            }
+            &__category_margin {
+                margin-bottom: 10px;
+            }
+        }
+        .table {
+            &__row-title,
+            &__row {
+                justify-content: space-between;
+            }
+            &__win,
+            &__draw {
+                font-size: 15px;
+            }
+        }
+        .draw {
+            width: 50%;
+            height: 50%;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        .list-of-fighters {
+            overflow: hidden;
+            &__item {
+                flex: 0 0 47%;
+            }
+        }
+    }

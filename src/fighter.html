@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soul scanner</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.scss">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
@@ -12,17 +13,30 @@
 <body>
     <header class="header">
         <img class="header__logo" src="../icon/logo/logo.png" alt="Soul Scanner">
-        <nav class="nav">
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
-            <div class="nav__item">UFC</div>
-            <div class="nav__item">MMA</div>
+        <div class="menu">
+            <input type="checkbox" class="menu__toggle" id="toggle">
+            <label class="menu__btn" for="toggle"> <span></span></label>
+            <nav class="nav">
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
+                <div class="nav__item">UFC</div>
+                <div class="nav__item">MMA</div>
 
-        </nav>
+            </nav>
+            <div class="popup popup-types">
+                <div class="popup-types__wrapper">
+                    <span class="popup-types__item popup-types__item_choozen">Суперлегкий</span>
+                    <span class="popup-types__item ">Легкий</span>
+                    <span class="popup-types__item">Средний</span>
+                    <span class="popup-types__item">Тяжелый</span>
+                </div>
+            </div>
+        </div>
+
     </header>
     <section class="main">
         <div class="list-of-fighters">
@@ -138,8 +152,8 @@
                         <div class="fighter-description__category fighter__category ">Весовая категория: полулегкий</div>
                         <div class="fighter-description__editor fighter__editor ">
                             <div class="fighter-description__parametrs fighter__parametrs">
-                                <div class="fighter__weight fighter-description__weight ">Вес: 65 кг </div>
-                                <div class="fighter__height fighter-description__height ">Рост: 175 см</div>
+                                <div class="fighter__weight fighter__weight_show fighter-description__weight ">Вес: 65 кг </div>
+                                <div class="fighter__height fighter__height_show fighter-description__height ">Рост: 175 см</div>
                             </div>
                             <div class="fighter__parametrs fighter__parametrs_none">
                                 <div class="fighter__weight fighter-description__weight">Вес:
@@ -156,9 +170,9 @@
                                     </div>
                                     см</div>
                             </div>
-                            <img class=" fighter-description__edit fighter__edit" src="../icon/edit.png" alt="edit">
+                            <img class=" fighter-description__edit fighter__edit fighter__edit_open" src="../icon/edit.png" alt="edit">
                             </img>
-                            <img class="fighter__edit fighter__edit_none" src="../icon/ready.png" alt="edit">
+                            <img class="fighter__edit fighter__edit_close fighter__edit_none" src="../icon/ready.png" alt="edit">
                             </img>
                         </div>
                     </div>
@@ -335,16 +349,20 @@
     </section>
 
     <footer class="footer">
-        <img class="logo" src="../icon/logo/logo.png" alt="Soul Scanner">
-        <img src="../icon/money/visa.png" alt="Visa" class="footer__money">
-        <img src="../icon/money/mc.png" alt="MasterCard" class="footer__money">
-        <img src="../icon/money/wm.png" alt="Webmoney" class="footer__money">
-        <img src="../icon/money/qiwi.png" alt="QIWI" class="footer__money">
-        <img src="../icon/money/ym.png" alt="YandexMoney" class="footer__money">
-        <span class="copyright">
-                ©2018 «Soulscanner.com»<br>
-                Все права защищены
-            </span>
+        <div class="logo_footer">
+            <img class="logo" src="../icon/logo/logo.png" alt="Soul Scanner">
+        </div>
+        <div class="footer__moneys">
+            <a href="#"><img src="../icon/money/visa.png" alt="Visa" class="footer__money"></a>
+            <a href="#"> <img src="../icon/money/mc.png" alt="MasterCard" class="footer__money"></a>
+            <a href="#"><img src="../icon/money/wm.png" alt="Webmoney" class="footer__money"></a>
+            <a href="#"><img src="../icon/money/qiwi.png" alt="QIWI" class="footer__money"></a>
+            <a href="#"><img src="../icon/money/ym.png" alt="YandexMoney" class="footer__money"></a>
+        </div>
+
+        <div class="copyright">
+            ©2018 «Soulscanner.com»<br> Все права защищены
+        </div>
     </footer>
     <div class="popup popup-types">
         <div class="popup-types__wrapper">
@@ -354,7 +372,10 @@
             <span class="popup-types__item">Тяжелый</span>
         </div>
     </div>
-    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -7,9 +7,16 @@
     justify-content: space-between;
     align-items: center;
     .copyright {
+        display: block;
         font-size: 12.5px;
         line-height: 1.64;
         text-align: left;
         color: #747474;
+    }
+    &__moneys {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 0 0 70%;
     }
 }
