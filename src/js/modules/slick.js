@@ -91,4 +91,43 @@ export const carausel = () => {
             }
         }]
     });
+    $('.list-of-fighters__inner').slick({
+        responsive: [{
+                breakpoint: 1900,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 510,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                }
+            }
+        ]
+    });
 }

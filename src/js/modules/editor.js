@@ -62,7 +62,6 @@ export const closeEditor = (button) => {
             height = button.parentNode.querySelector('.fighter__height_show'),
             weightInput = button.parentNode.querySelector('.fighter__weight_cont'),
             heightInput = button.parentNode.querySelector('.fighter__height_cont');
-        console.log(weight, height);
         if (!!weight.innerHTML) {
             weight.innerHTML = `Вес: ${weightInput.value} кг`;
             weightInput.value = "";

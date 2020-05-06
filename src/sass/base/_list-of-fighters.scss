@@ -6,10 +6,16 @@
 }
 
 .list-of-fighters {
+    width: 205px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 15px;
+    &__inner {
+        width: 200px;
+        margin: 0 auto;
+    }
     &__item {
         width: 205px;
         height: 76px;
@@ -30,6 +36,78 @@
                 background-color: #f9df4f;
                 z-index: 3;
             }
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        left: -7%;
+        top: 50%;
+        &:before {
+            content: "";
+            background-color: #a8a8a8;
+            width: 15px;
+            height: 1.5px;
+            display: block;
+            border-radius: 3px;
+            transform: rotate(45deg);
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: #a8a8a8;
+            width: 15px;
+            height: 1.5px;
+            top: 1%;
+            left: 0%;
+            display: block;
+            border-radius: 3px;
+            transform: rotate(-45deg);
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+            z-index: 1;
+        }
+        &:hover:before {
+            background-color: #201f1f;
+        }
+        &:hover:after {
+            background-color: #201f1f;
+        }
+    }
+    .slick-next {
+        position: absolute;
+        right: -7%;
+        top: 50%;
+        &:before {
+            content: "";
+            background-color: #a8a8a8;
+            width: 15px;
+            height: 1.5px;
+            display: block;
+            border-radius: 3px;
+            transform: rotate(-45deg);
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: #a8a8a8;
+            width: 15px;
+            height: 1.5px;
+            top: 1%;
+            left: 0%;
+            display: block;
+            border-radius: 3px;
+            transform: rotate(45deg);
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+            z-index: 1;
+        }
+        &:hover:before {
+            background-color: #201f1f;
+        }
+        &:hover:after {
+            background-color: #201f1f;
         }
     }
     &__name {
